@@ -8,9 +8,9 @@ class CertificateContext extends Context{
 
     getClientName(){
 
-        const id = ctx.clientIdentity.getID()
-        console.log(`id: ${id}`)
-        console.log(typeof(id))
+        const id = this.clientIdentity.getID()
+        // console.log(`id: ${id}`)
+        // console.log(typeof(id))
         const data = id.split('/')
         const client = data[2].split('=')
         const clientName = client[1].split('::')
@@ -19,4 +19,4 @@ class CertificateContext extends Context{
     }
 }
 
-modules.exports = CertificateContext
+module.exports = CertificateContext
