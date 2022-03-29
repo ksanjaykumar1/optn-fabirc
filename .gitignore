@@ -1,3 +1,7 @@
 fabric/bin
 fabric/backend/node_modules
 explorer/organizations
+fabric/test-network/organizations
+fabric/test-network/channel-artifacts/
+fabric/test-network/log.txt
+fabric/wallet
